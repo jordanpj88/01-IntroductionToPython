@@ -2,15 +2,15 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and Parker Jordan.
 """
 ########################################################################
-# TODO: 1.
+# Done: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# Done: 2.
 #   You should have RUN the  m5e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
 #
@@ -28,3 +28,27 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow()
+window.tracer(2)
+im_gonna_screw_this_up = rg.SimpleTurtle('turtle')
+im_gonna_screw_this_up.pen = rg.Pen('orange', 5)
+
+size = 50
+for k in range(10):
+    im_gonna_screw_this_up.draw_circle(size)
+    im_gonna_screw_this_up.pen_up()
+    im_gonna_screw_this_up.right(45)
+    im_gonna_screw_this_up.forward(10)
+    im_gonna_screw_this_up.left(45)
+    im_gonna_screw_this_up.pen_down()
+    size = size - 5
+
+holy_cow_that_actually_worked = rg.SimpleTurtle('turtle')
+holy_cow_that_actually_worked.pen = rg.Pen('yellow', 5)
+
+for k in range(200):
+    holy_cow_that_actually_worked.right(50)
+    holy_cow_that_actually_worked.forward(k)
+
+# Ok... that was pretty cool
