@@ -10,11 +10,11 @@ Also:
   -- ASSIGNING a VALUE to a NAME (VARIABLE).
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and Parker Jordan.
 """
 ###############################################################################
 #
-# TODO: 1.
+# Done: 1.
 #   Yes, that means for YOU to DO things per the following instructions:
 #
 #   On Line 13 above, replace  PUT_YOUR_NAME_HERE  with your OWN name.
@@ -29,7 +29,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -48,7 +48,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 3.
+# Done: 3.
 #   Run this module.  A window will pop up and Turtles will move around.
 #   After the Turtles stop moving,
 #      ** click anywhere in the window to close the window **.
@@ -110,13 +110,14 @@ natasha.speed = 5  # Bigger means faster, max is usually about 10
 natasha.backward(50)
 natasha.right(90)
 natasha.forward(125)
-
+natasha.left(100)
+natasha.forward(20)
 natasha.speed = 1  # Now slower
 natasha.go_to(rg.Point(-100, 200))
 
 ###############################################################################
 #
-# TODO: 4.
+# Done: 4.
 #   Add a few more lines of your own code to make one of the existing
 #   SimpleTurtles move some more and/or have different characteristics.
 #
@@ -129,7 +130,7 @@ natasha.go_to(rg.Point(-100, 200))
 
 ###############################################################################
 #
-# TODO: 5.
+# Done: 5.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       boris    natasha
@@ -153,10 +154,17 @@ natasha.go_to(rg.Point(-100, 200))
 #   As always, test by running the module.
 #
 ###############################################################################
+kevin = rg.SimpleTurtle('turtle')
+kevin.pen = rg.Pen('blue', 30)
+kevin.speed = 5
 
+kevin.forward(100)
+kevin.right(100)
+kevin.forward(200)
+kevin.speed = 1
 ###############################################################################
 #
-# TODO: 6.
+# Done: 6.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #   Run one more time to be sure that all is still OK.
 #
